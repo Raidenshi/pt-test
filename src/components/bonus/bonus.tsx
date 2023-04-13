@@ -36,7 +36,7 @@ export default function Bonus({
           {new Date(data.dateBurning).toLocaleDateString('ru-Ru', {
             month: 'numeric',
             day: 'numeric',
-          })}
+          })}{' '}
           сгорит
         </span>
         <img src={fire} alt="" />
