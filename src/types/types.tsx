@@ -1,4 +1,4 @@
-interface Result {
+interface IResult {
   status: number;
   message: string;
   messageDev: string;
@@ -7,19 +7,19 @@ interface Result {
   idLog: string;
 }
 
-interface AuthResult {
-  result: Result;
+interface IAuthResult {
+  result: IResult;
   accessToken: string;
 }
 
-interface BonusData {
+interface IBonusData {
   typeBonusName: string;
   currentQuantity: number;
   forBurningQuantity: number;
   dateBurning: string;
 }
 
-interface Bonus {
-  resultOperation: Result;
-  data: BonusData;
+interface IBonus {
+  resultOperation: IResult;
+  data: IBonusData;
 }

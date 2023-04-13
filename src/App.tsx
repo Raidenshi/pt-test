@@ -7,12 +7,12 @@ import Loader from './components/loader/loader';
 
 function App() {
   const [error, setError] = useState(false);
-  const [bonusData, setbonusData] = useState<BonusData | null>(null);
+  const [bonusData, setbonusData] = useState<IBonusData | null>(null);
 
   useEffect(() => {
     getToken()
-      .then((data: AuthResult) => {
-        getBonusData(data.accessToken).then((bonus: Bonus) => {
+      .then((data: IAuthResult) => {
+        getBonusData(data.accessToken).then((bonus: IBonus) => {
           setbonusData(bonus.data);
         });
       })

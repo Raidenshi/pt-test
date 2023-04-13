@@ -9,7 +9,7 @@ export default function Bonus({
   data,
   error,
 }: {
-  data: BonusData;
+  data: IBonusData;
   error: boolean;
 }) {
   if (error) {
